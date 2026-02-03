@@ -1,6 +1,7 @@
 select * from students;
 select * from courses;
 select * from enrollments;
+-- task4----
 
 select * from students where email like '%@gmail.com';
 select * from courses where course_name like 'data%';
