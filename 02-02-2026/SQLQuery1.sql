@@ -138,9 +138,7 @@ select * from enrollments;
 
 EXEC sp_rename 'dbo.students.join_date', 'registration_date', 'COLUMN';
 
-ALTER TABLE students
-ADD registration_date DATE;
-
+ALTER TABLE students ADD registration_date DATE;
 
 select * from students;
 alter table students drop column registration_date; 
@@ -152,18 +150,9 @@ select * from students where age >21;
 
 select * from students where is_active=1;
 
-SELECT *
-FROM courses
-WHERE fee BETWEEN 7000 AND 10000;
+select * from courses where fee BETWEEN 7000 AND 10000;
 
 select * from students where age in(21,22,25);
 
 select * from students where age>20 and is_active=1;
 select * from students where age<20 or is_active=0;
-
-select * from courses where 
-
-
-
-
-
